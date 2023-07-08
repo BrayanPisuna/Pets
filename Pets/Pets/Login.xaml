@@ -5,7 +5,7 @@
              x:Class="Pets.Login" NavigationPage.HasNavigationBar="True">
 
 
-    <Grid BackgroundColor="#FF9800">
+    <Grid BackgroundColor="White" Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
@@ -23,11 +23,77 @@
                    RepeatMode="Infinite" VerticalOptions="Center"
                                  
             />
-            <Label Grid.Row="1" Text="Pets Home" TextColor="White"
+            <Label Grid.Row="1" Text="Pets Finder"
+                   TextColor="#FF9800"
                    HorizontalTextAlignment="Center"
                    FontSize="40" FontAttributes="Bold"/>
 
-        </Grid>                
+        </Grid>
+
+        <StackLayout Grid.Row="1">
+
+            <StackLayout Orientation="Horizontal">
+                <Image  WidthRequest="45" Source="https://i.ibb.co/JHh3zGF/user.png" />
+                <Entry Placeholder="Usuario"
+                       x:Name="lblUser"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+                <Label/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Image  WidthRequest="45" Source="https://i.ibb.co/M6ns8vY/pass.png" />
+                <Entry Placeholder="Contraseña"
+                       x:Name="lblPass"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+            </StackLayout>
+
+
+            <BoxView Grid.Row="1" BackgroundColor="Transparent"/>
+
+            <Button TextColor="White"
+                    BackgroundColor="#FF9800"
+                    Text="Iniciar Sesión"
+                    FontAttributes="Bold"
+                    FontSize="16"                   
+                    CornerRadius="16"
+               
+            />
+
+            <Button TextColor="White"
+                    BackgroundColor="Transparent"
+                    Text="Crear Cuenta"
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    TextTransform="None"
+                    
+            />
+
+
+        </StackLayout>
+
+        <StackLayout  HorizontalOptions="Center" Grid.Row="2"
+                      Orientation="Horizontal"
+                      >
+
+            <Label Text="Universidad Israel"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#1C2833"             
+                
+            />
+
+            <Label Text=" 9 Semestres"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#FF9800"            
+                
+            />
+
+        </StackLayout>
         
     </Grid>
 
