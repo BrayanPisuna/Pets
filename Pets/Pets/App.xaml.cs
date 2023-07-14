@@ -10,7 +10,7 @@ namespace Pets
         {
             InitializeComponent();
 
-            MainPage = new Registro();
+            MainPage = new Validacion();
         }
 
         protected override void OnStart()

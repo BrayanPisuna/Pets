@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="Pets.Validacion">
+    <ContentPage.Content>
+
+        <Grid BackgroundColor="Black" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+            <Grid VerticalOptions="Center" Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="1" Text="Validacion de Datos"
+                   TextColor="#FF9800"
+                   HorizontalTextAlignment="Center"
+                   FontSize="40" FontAttributes="Bold"/>
+
+            </Grid>
+
+            <StackLayout Grid.Row="1">
+
+                <StackLayout Orientation="Horizontal">
+                    <Entry Placeholder="Nombres" x:Name="lblNombres" 
+                       PlaceholderColor="#F85F6A"
+                       TextColor="#black"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Entry Placeholder="Apellidos" x:Name="lblApellidos" 
+                       PlaceholderColor="#F85F6A"
+                       TextColor="#black"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                        <Entry Placeholder="Correo" x:Name="lblCorreo" 
+                       PlaceholderColor="#F85F6A"
+                       TextColor="#black"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                        <Entry Placeholder="Telefono" x:Name="lblTelefono" 
+                            PlaceholderColor="#F85F6A"
+                            TextColor="#black"
+                            FontAttributes="Bold" WidthRequest="300"
+                        />
+                </StackLayout>
+                
+                
+
+
+
+
+
+
+             </StackLayout>
+
+
+
+
+        </Grid>
+
+        
+        
+        
+        
+    </ContentPage.Content>
+</ContentPage>

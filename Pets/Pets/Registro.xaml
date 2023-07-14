@@ -40,7 +40,7 @@
             <StackLayout Orientation="Horizontal">
                 <Entry Placeholder="Usuario" x:Name="lblUser" 
                        PlaceholderColor="#F85F6A"
-                       TextColor="Black"
+                       TextColor="#black"
                        FontAttributes="Bold" WidthRequest="300"
                  />
                 
@@ -53,14 +53,7 @@
                  />
 
             </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="Correo" x:Name="lblCorreo" 
-                       PlaceholderColor="#F85F6A"
-                       TextColor="#F85F6A"
-                       FontAttributes="Bold" WidthRequest="300"
-                 />
-
-            </StackLayout>
+            
             <StackLayout Orientation="Horizontal">
                 <Entry Placeholder="Contrasena" x:Name="lblContrasena" 
                        PlaceholderColor="#F85F6A"
