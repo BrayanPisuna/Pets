@@ -20,7 +20,7 @@ namespace Pets
             InitializeComponent();
 
             //MainPage = new NavigationPage( new Login(URL , TOKEN_FIRMA));
-            MainPage = new NavigationPage(new Validacion());
+            MainPage = new NavigationPage(new Solicitud());
         }
 
         protected override void OnStart()
