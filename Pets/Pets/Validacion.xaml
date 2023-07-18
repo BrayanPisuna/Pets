@@ -3,81 +3,77 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              x:Class="Pets.Validacion">
-    <ContentPage.Content>
 
-        <Grid BackgroundColor="Black" Margin="20">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="*"/>
 
-            </Grid.RowDefinitions>
-            <Grid VerticalOptions="Center" Grid.Row="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                </Grid.RowDefinitions>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="240"/>
+            <RowDefinition Height="*"/>
 
-                <Label Grid.Row="1" Text="Validacion de Datos"
+        </Grid.RowDefinitions>
+        <Image Source="https://i.ibb.co/LkCq57C/pngegg-1.png"/>
+
+        <StackLayout Grid.Row="1" Margin="20" Orientation="Vertical">
+
+            
+            <Label Grid.Row="1" Text="Validacion de Datos"
                    TextColor="#FF9800"
                    HorizontalTextAlignment="Center"
-                   FontSize="40" FontAttributes="Bold"/>
+                   FontSize="20" FontAttributes="Bold"/>
 
-            </Grid>
-
-            <StackLayout Grid.Row="1">
-
-                <StackLayout Orientation="Horizontal">
-                    <Entry Placeholder="Nombres" x:Name="lblNombres" 
-                       PlaceholderColor="#F85F6A"
-                       TextColor="#black"
+            <Entry Placeholder="Nombres"
+                       x:Name="lblNombre"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
                        FontAttributes="Bold" WidthRequest="300"
                  />
 
-                </StackLayout>
-
-                <StackLayout Orientation="Horizontal">
-                    <Entry Placeholder="Apellidos" x:Name="lblApellidos" 
-                       PlaceholderColor="#F85F6A"
-                       TextColor="#black"
+            <Entry Placeholder="Apellidos"
+                       x:Name="lblApellido"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
                        FontAttributes="Bold" WidthRequest="300"
                  />
 
-                </StackLayout>
-
-                <StackLayout Orientation="Horizontal">
-                        <Entry Placeholder="Correo" x:Name="lblCorreo" 
-                       PlaceholderColor="#F85F6A"
-                       TextColor="#black"
+            <Entry Placeholder="Direccion"
+                       x:Name="lblUser"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
                        FontAttributes="Bold" WidthRequest="300"
                  />
-                </StackLayout>
 
-                <StackLayout Orientation="Horizontal">
-                        <Entry Placeholder="Telefono" x:Name="lblTelefono" 
-                            PlaceholderColor="#F85F6A"
-                            TextColor="#black"
-                            FontAttributes="Bold" WidthRequest="300"
-                        />
-                </StackLayout>
-                
-                
+            <Entry Placeholder="Telefono"
+                       x:Name="lbltelefono"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+            <Entry Placeholder="Correo"
+                       x:Name="lblCorreo"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
 
+            <Button TextColor="White"
+                    BackgroundColor="#FF9800"
+                    Text="Subir Documento de Cedula"
+                    FontAttributes="Bold"
+                    FontSize="16"                   
+                    CornerRadius="16"
+               
+            />
 
+            <Button TextColor="White"
+                    BackgroundColor="#FF9800"
+                    Text="Validar Documentacion"
+                    FontAttributes="Bold"
+                    FontSize="16"                   
+                    CornerRadius="16"
+               
+            />
 
+        </StackLayout>
+    </Grid>
 
-
-
-             </StackLayout>
-
-
-
-
-        </Grid>
-
-        
-        
-        
-        
-    </ContentPage.Content>
 </ContentPage>
